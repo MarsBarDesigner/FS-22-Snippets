@@ -5,7 +5,7 @@
 	"version": "0.0.1",
 	"publisher": "Razor Modding Team",
 	"icon": "icons/icon128.png",
-	"bugs": "https://github.com/FSGModding/FS22_vsCode_Snippets/issues",
+	"bugs": "https://github.com/razormoddingteam/FS-22-Snippets/issues",
 	"engines": {
 		"vscode": "^1.28.0"
 	},
@@ -23,5 +23,9 @@
 				"path": "./lua_snippets.json"
 			}
 		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/razormoddingteam/FS-22-Snippets/"
 	}
 }
