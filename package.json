@@ -1,9 +1,9 @@
 {
-	"name": "fs22-snippets",
+	"name": "fs22-vscode-snippets",
 	"displayName": "FS22 Snippets",
 	"description": "Farming Simulator 22 Snippets",
 	"version": "0.0.1",
-	"publisher": "Razor Modding Team",
+	"publisher": "RazorModdingTeam",
 	"icon": "icons/icon128.png",
 	"bugs": "https://github.com/razormoddingteam/FS-22-Snippets/issues",
 	"engines": {
