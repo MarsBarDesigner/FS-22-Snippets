@@ -1,0 +1,695 @@
+{
+	"Debug: table to console/log": {
+		"prefix": "DebugUtil.printTableRecursively",
+		"body": [
+			"DebugUtil.printTableRecursively(${1:table}, \"  ${2:title}:\", 0, 2)"
+		],
+		"description": "Dump table to console/log"
+	},
+	"Debug: table to string": {
+		"prefix": "DebugUtil.debugTableToString",
+		"body": [
+			"DebugUtil.debugTableToString(${1:table}, \"  ${2:title}:\", 0, 2)"
+		],
+		"description": "Dump table to string"
+	},
+	"Density Map: get field data": {
+		"prefix": "FSDensityMapUtil.getFieldDataAtWorldPosition",
+		"body": [
+			"FSDensityMapUtil.getFieldDataAtWorldPosition(${1:x}, ${2:y}, ${3:z})"
+		],
+		"description": "Get field data at world position"
+	},
+	"Density Map: get status": {
+		"prefix": "FSDensityMapUtil.getStatus",
+		"body": [
+			"FSDensityMapUtil.getStatus(${1:startWorldX}, ${2:startWorldZ}, ${3:widthWorldX}, ${4:widthWorldZ}, ${5:heightWorldX}, ${6:heightWorldZ})"
+		],
+		"description": "Get field status"
+	},
+	"XML: getXMLBool" : {
+		"prefix": "getXMLBool",
+		"body": [
+			"getXMLBool(${1:xmlFile}, ${2:key})"
+		]
+	},
+	"XML: getXMLString" : {
+		"prefix": "getXMLString",
+		"body": [
+			"getXMLString(${1:xmlFile}, ${2:key})"
+		]
+	},
+	"XML: getXMLInt" : {
+		"prefix": "getXMLInt",
+		"body": [
+			"getXMLInt(${1:xmlFile}, ${2:key})"
+		]
+	},
+	"XML: getXMLFloat" : {
+		"prefix": "getXMLFloat",
+		"body": [
+			"getXMLFloat(${1:xmlFile}, ${2:key})"
+		]
+	},
+	"XML: setXMLBool" : {
+		"prefix": "setXMLBool",
+		"body": [
+			"setXMLBool(${1:xmlFile}, ${2:key}, ${3:value})"
+		]
+	},
+	"XML: setXMLString" : {
+		"prefix": "setXMLString",
+		"body": [
+			"setXMLString(${1:xmlFile}, ${2:key}, ${3:value})"
+		]
+	},
+	"XML: setXMLInt" : {
+		"prefix": "setXMLInt",
+		"body": [
+			"setXMLInt(${1:xmlFile}, ${2:key}, ${3:value})"
+		]
+	},
+	"XML: setXMLFloat" : {
+		"prefix": "setXMLFloat",
+		"body": [
+			"setXMLFloat(${1:xmlFile}, ${2:key}, ${3:value})"
+		]
+	},
+	"Bitmask: bitAND" : {
+		"prefix": "bitAND",
+		"body": [
+			"bitAND(${1:mask}, ${2:bit})"
+		],
+		"description": "raw AND"
+	},
+	"Bitmask: bitOR" : {
+		"prefix": "bitOR",
+		"body": [
+			"bitOR(${1:mask}, ${2:bit})"
+		],
+		"description": "raw OR"
+	},
+	"Bitmask: bitXOR" : {
+		"prefix": "bitXOR",
+		"body": [
+			"bitXOR(${1:mask}, ${2:bit})"
+		],
+		"description": "raw XOR"
+	},
+	"Utils.getNoNil" : {
+		"prefix": "Utils.getNoNil",
+		"body": [
+			"Utils.getNoNil(${1:value}, ${2:default})"
+		]
+	},
+	"Utils.getNoNilRad" : {
+		"prefix": "Utils.getNoNilRad",
+		"body": [
+			"Utils.getNoNilRad(${1:valueDeg}, ${2:defaultRad})"
+		]
+	},
+	"Utils.getModNameAndBaseDirectory" : {
+		"prefix": "Utils.getModNameAndBaseDirectory",
+		"body": [
+			"Utils.getModNameAndBaseDirectory(${1:filename})"
+		]
+	},
+	"Utils.getYRotationBetweenNodes" : {
+		"prefix": "Utils.getYRotationBetweenNodes",
+		"body": [
+			"Utils.getYRotationBetweenNodes(${1:node1}, ${2:node2}, ${3:offset1}, ${4:offset2})"
+		]
+	},
+	"Utils.getFilename" : {
+		"prefix": "Utils.getFilename",
+		"body": [
+			"Utils.getFilename(${1:filename}, ${2:baseDir})"
+		],
+		"description": "get full path filename"
+	},
+	"Utils.getFilenameFromPath" : {
+		"prefix": "Utils.getFilenameFromPath",
+		"body": [
+			"Utils.getFilenameFromPath(${1:path})"
+		]
+	},
+	"Utils.getDirectory" : {
+		"prefix": "Utils.getDirectory",
+		"body": [
+			"Utils.getDirectory(${1:path})"
+		],
+		"description": "Get directory (strip filename)"
+
+	},
+	"Utils.appendedFunction" : {
+		"prefix": "Utils.appendedFunction",
+		"body": [
+			"Utils.appendedFunction(${1:oldFunc}, ${2:newFunc})"
+		]
+	},
+	"Utils.prependedFunction" : {
+		"prefix": "Utils.prependedFunction",
+		"body": [
+			"Utils.prependedFunction(${1:oldFunc}, ${2:newFunc})"
+		]
+	},
+	"Utils.overwrittenFunction" : {
+		"prefix": "Utils.overwrittenFunction",
+		"body": [
+			"Utils.overwrittenFunction(${1:oldFunc}, ${2:newFunc})"
+		]
+	},
+	"Utils.stringToBoolean" : {
+		"prefix": "Utils.stringToBoolean",
+		"body": [
+			"Utils.stringToBoolean(${1:value})"
+		],
+		"description": "convert string to real boolean"
+	},
+	"Utils.formatTime" : {
+		"prefix": "Utils.formatTime",
+		"body": [
+			"Utils.formatTime(${1:timeInMinutes})"
+		]
+	},
+	"Utils.getCoinToss" : {
+		"prefix": "Utils.getCoinToss",
+		"body": [
+			"Utils.getCoinToss()"
+		],
+		"description": "Coin toss boolean"
+	},
+	"Utils.clearBit" : {
+		"prefix": "Utils.clearBit",
+		"body": [
+			"Utils.clearBit(${1:bitMask}, ${2:bit})"
+		],
+		"description": "clear bit at index 'bit'"
+	},
+	"Utils.setBit" : {
+		"prefix": "Utils.setBit",
+		"body": [
+			"Utils.setBit(${1:bitMask}, ${2:bit})"
+		],
+		"description": "set bit at index 'bit'"
+	},
+	"Utils.isBitSet" : {
+		"prefix": "Utils.isBitSet",
+		"body": [
+			"Utils.isBitSet(${1:bitMask}, ${2:bit})"
+		],
+		"description": "query bit at index 'bit'"
+	},
+	"Utils.randomFloat" : {
+		"prefix": "Utils.randomFloat",
+		"body": [
+			"Utils.randomFloat(${1:lowerValue}, ${2:upperValue})"
+		]
+	},
+	"MathUtil.sign" : {
+		"prefix" : "MathUtil.sign",
+		"body": [
+			"MathUtil.sign(${1:value})"
+		]
+	},
+	"MathUtil.isNan" : {
+		"prefix" : "MathUtil.isNan",
+		"body": [
+			"MathUtil.isNan(${1:value})"
+		]
+	},
+	"MathUtil.round" : {
+		"prefix" : "MathUtil.round",
+		"body": [
+			"MathUtil.round(${1:value}, ${2:precision})"
+		]
+	},
+	"MathUtil.degToRad" : {
+		"prefix" : "MathUtil.degToRad",
+		"body": [
+			"MathUtil.degToRad(${1:degValue})"
+		]
+	},
+	"MathUtil.inverseLerp" : {
+		"prefix" : "MathUtil.inverseLerp",
+		"body": [
+			"MathUtil.inverseLerp(${1:v1}, ${2:v2}, ${3:cv})"
+		]
+	},
+	"MathUtil.timeLerp" : {
+		"prefix" : "MathUtil.timeLerp",
+		"body": [
+			"MathUtil.timeLerp(${1:startTime}, ${2:endTime}, ${3:currentTime})"
+		]
+	},
+	"MathUtil.clamp" : {
+		"prefix" : "MathUtil.clamp",
+		"body": [
+			"MathUtil.clamp(${1:value}, ${2:minVal}, ${3:maxVal})"
+		]
+	},
+	"MathUtil.getIsOutOfBounds" : {
+		"prefix" : "MathUtil.getIsOutOfBounds",
+		"body": [
+			"MathUtil.getIsOutOfBounds(${1:value}, ${2:limit1}, ${3:limit2})"
+		]
+	},
+	"MathUtil.getFlooredPercent" : {
+		"prefix" : "MathUtil.getFlooredPercent",
+		"body": [
+			"MathUtil.getFlooredPercent(${1:value}, ${2:maxValue})"
+		]
+	},
+	"MathUtil.getFlooredBounded" : {
+		"prefix" : "MathUtil.getFlooredBounded",
+		"body": [
+			"MathUtil.getFlooredBounded(${1:value}, ${2:minValue}, ${3:maxValue})"
+		]
+	},
+	"MathUtil.getValidLimit" : {
+		"prefix" : "MathUtil.getValidLimit",
+		"body": [
+			"MathUtil.getValidLimit(${1:limit})"
+		]
+	},
+	"MathUtil.getAngleDifference" : {
+		"prefix" : "MathUtil.getAngleDifference",
+		"body": [
+			"MathUtil.getAngleDifference(${1:alpha}, ${2:beta})"
+		]
+	},
+	"MathUtil.vector2Length" : {
+		"prefix" : "MathUtil.vector2Length",
+		"body": [
+			"MathUtil.vector2Length(${1:x}, ${2:y})"
+		]
+	},
+	"MathUtil.vector2LengthSq" : {
+		"prefix" : "MathUtil.vector2LengthSq",
+		"body": [
+			"MathUtil.vector2LengthSq(${1:x}, ${2:y})"
+		]
+	},
+	"MathUtil.vector2Normalize" : {
+		"prefix" : "MathUtil.vector2Normalize",
+		"body": [
+			"MathUtil.vector2Normalize(${1:x}, ${2:y})"
+		]
+	},
+	"MathUtil.vector3Length" : {
+		"prefix" : "MathUtil.vector3Length",
+		"body": [
+			"MathUtil.vector3Length(${1:x}, ${2:y}, ${3:z})"
+		]
+	},
+	"MathUtil.vector3LengthSq" : {
+		"prefix" : "MathUtil.vector3LengthSq",
+		"body": [
+			"MathUtil.vector3LengthSq(${1:x}, ${2:y}, ${3:z})"
+		]
+	},
+	"MathUtil.vector3Normalize" : {
+		"prefix" : "MathUtil.vector3Normalize",
+		"body": [
+			"MathUtil.vector3Normalize(${1:x}, ${2:y}, ${3:z})"
+		]
+	},
+	"MathUtil.vector3SetLength" : {
+		"prefix" : "MathUtil.vector3SetLength",
+		"body": [
+			"MathUtil.vector3SetLength(${1:x}, ${2:y}, ${3:z}, ${4:length})"
+		]
+	},
+	"MathUtil.vector3Clamp" : {
+		"prefix" : "MathUtil.vector3Clamp",
+		"body": [
+			"MathUtil.vector3Clamp(${1:x}, ${2:y}, ${3:z}, ${4:minVal}, ${5:maxVal})"
+		]
+	},
+	"MathUtil.vector3Lerp" : {
+		"prefix" : "MathUtil.vector3Lerp",
+		"body": [
+			"MathUtil.vector3Lerp(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2}, ${7:alpha})"
+		]
+	},
+	"MathUtil.inverseVector3Lerp" : {
+		"prefix" : "MathUtil.inverseVector3Lerp",
+		"body": [
+			"MathUtil.inverseVector3Lerp(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2}, ${7:c1}, ${8:c2}, ${9:c3})"
+		]
+	},
+	"MathUtil.vector3ArrayLerp" : {
+		"prefix" : "MathUtil.vector3ArrayLerp",
+		"body": [
+			"MathUtil.vector3ArrayLerp(${1:v1}, ${2:v2}, ${3:alpha})"
+		]
+	},
+	"MathUtil.inverseVector3ArrayLerp" : {
+		"prefix" : "MathUtil.inverseVector3ArrayLerp",
+		"body": [
+			"MathUtil.inverseVector3ArrayLerp(${1:v1}, ${2:v2}, ${3:cv})"
+		]
+	},
+	"MathUtil.vector3Transformation" : {
+		"prefix" : "MathUtil.vector3Transformation",
+		"body": [
+			"MathUtil.vector3Transformation($0x, y, z, m11, m12, m13, m21, m22, m23, m31, m32, m33)"
+		]
+	},
+	"MathUtil.transform" : {
+		"prefix" : "MathUtil.transform",
+		"body": [
+			"MathUtil.transform($0x, y, z, dirX, dirY, dirZ, upX, upY, upZ, xOffset, yOffset, zOffset)"
+		]
+	},
+	"MathUtil.dotProduct" : {
+		"prefix" : "MathUtil.dotProduct",
+		"body": [
+			"MathUtil.dotProduct(${1:ax}, ${2:ay}, ${3:az}, ${4:bx}, ${5:by}, ${6:bz})"
+		]
+	},
+	"MathUtil.crossProduct" : {
+		"prefix" : "MathUtil.crossProduct",
+		"body": [
+			"MathUtil.crossProduct(${1:ax}, ${2:ay}, ${3:az}, ${4:bx}, ${5:by}, ${6:bz})"
+		]
+	},
+	"MathUtil.getVectorAngleDifference" : {
+		"prefix" : "MathUtil.getVectorAngleDifference",
+		"body": [
+			"MathUtil.getVectorAngleDifference(${1:dirX1}, ${2:dirY1}, ${3:dirZ1}, ${4:dirX2}, ${5:dirY2}, ${6:dirZ2})"
+		]
+	},
+	"MathUtil.getYRotationFromDirection" : {
+		"prefix" : "MathUtil.getYRotationFromDirection",
+		"body": [
+			"MathUtil.getYRotationFromDirection(${1:dx}, ${2:dz})"
+		]
+	},
+	"MathUtil.getDirectionFromYRotation" : {
+		"prefix" : "MathUtil.getDirectionFromYRotation",
+		"body": [
+			"MathUtil.getDirectionFromYRotation(${1:rotY})"
+		]
+	},
+	"MathUtil.getRotationLimitedVector2" : {
+		"prefix" : "MathUtil.getRotationLimitedVector2",
+		"body": [
+			"MathUtil.getRotationLimitedVector2(${1:x}, ${2:y}, ${3:minRot}, ${4:maxRot})"
+		]
+	},
+	"MathUtil.quaternionVectorMultiplication" : {
+		"prefix" : "MathUtil.quaternionVectorMultiplication",
+		"body": [
+			"MathUtil.quaternionVectorMultiplication(${1:quatX}, ${2:quatY}, ${3:quatZ}, ${4:quatW}, ${5:vecX}, ${6:vecY}, ${7:vecZ})"
+		]
+	},
+	"MathUtil.quaternionMult" : {
+		"prefix" : "MathUtil.quaternionMult",
+		"body": [
+			"MathUtil.quaternionMult(${1:x}, ${2:y}, ${3:z}, ${4:w}, ${5:x1}, ${6:y1}, ${7:z1}, ${8:w1})"
+		]
+	},
+	"MathUtil.quaternionNormalized" : {
+		"prefix" : "MathUtil.quaternionNormalized",
+		"body": [
+			"MathUtil.quaternionNormalized(${1:x}, ${2:y}, ${3:z}, ${4:w})"
+		]
+	},
+	"MathUtil.slerpQuaternion" : {
+		"prefix" : "MathUtil.slerpQuaternion",
+		"body": [
+			"MathUtil.slerpQuaternion(${1:x1}, ${2:y1}, ${3:z1}, ${4:w1}, ${5:x2}, ${6:y2}, ${7:z2}, ${8:w2}, ${9:t})"
+		]
+	},
+	"MathUtil.normalizeRotationForShortestPath" : {
+		"prefix" : "MathUtil.normalizeRotationForShortestPath",
+		"body": [
+			"MathUtil.normalizeRotationForShortestPath(${1:targetRotation}, ${2:curRotation})"
+		]
+	},
+	"MathUtil.nlerpQuaternionShortestPath" : {
+		"prefix" : "MathUtil.nlerpQuaternionShortestPath",
+		"body": [
+			"MathUtil.nlerpQuaternionShortestPath(${1:x1}, ${2:y1}, ${3:z1}, ${4:w1}, ${5:x2}, ${6:y2}, ${7:z2}, ${8:w2}, ${9:t})"
+		]
+	},
+	"MathUtil.slerpQuaternionShortestPath" : {
+		"prefix" : "MathUtil.slerpQuaternionShortestPath",
+		"body": [
+			"MathUtil.slerpQuaternionShortestPath(${1:x1}, ${2:y1}, ${3:z1}, ${4:w1}, ${5:x2}, ${6:y2}, ${7:z2}, ${8:w2}, ${9:t})"
+		]
+	},
+	"MathUtil.quaternionMadShortestPath" : {
+		"prefix" : "MathUtil.quaternionMadShortestPath",
+		"body": [
+			"MathUtil.quaternionMadShortestPath(${1:x1}, ${2:y1}, ${3:z1}, ${4:w1}, ${5:x2}, ${6:y2}, ${7:z2}, ${8:w2}, ${9:t})"
+		]
+	},
+	"MathUtil.getDistanceToRectangle2D" : {
+		"prefix" : "MathUtil.getDistanceToRectangle2D",
+		"body": [
+			"MathUtil.getDistanceToRectangle2D(${1:posX}, ${2:posZ}, ${3:sx}, ${4:sz}, ${5:dx}, ${6:dz}, ${7:length}, ${8:widthHalf})"
+		]
+	},
+	"MathUtil.getSignedDistanceToLineSegment2D" : {
+		"prefix" : "MathUtil.getSignedDistanceToLineSegment2D",
+		"body": [
+			"MathUtil.getSignedDistanceToLineSegment2D(${1:x}, ${2:z}, ${3:sx}, ${4:sz}, ${5:dx}, ${6:dz}, ${7:length})"
+		]
+	},
+	"MathUtil.getLineLineIntersection2D" : {
+		"prefix" : "MathUtil.getLineLineIntersection2D",
+		"body": [
+			"MathUtil.getLineLineIntersection2D(${1:x1}, ${2:z1}, ${3:dirX1}, ${4:dirZ1}, ${5:x2}, ${6:z2}, ${7:dirX2}, ${8:dirZ2})"
+		]
+	},
+	"MathUtil.getLineBoundingVolumeIntersect" : {
+		"prefix" : "MathUtil.getLineBoundingVolumeIntersect",
+		"body": [
+			"MathUtil.getLineBoundingVolumeIntersect(${1:ax1}, ${2:ay1}, ${3:ax2}, ${4:ay2}, ${5:bx1}, ${6:by1}, ${7:bx2}, ${8:by2})"
+		]
+	},
+	"MathUtil.hasRectangleLineIntersection2D" : {
+		"prefix" : "MathUtil.hasRectangleLineIntersection2D",
+		"body": [
+			"MathUtil.hasRectangleLineIntersection2D($0x1, z1, dirX1, dirZ1, dirX2, dirZ2, x3, z3, dirX3, dirZ3)"
+		]
+	},
+	"MathUtil.getCircleCircleIntersection" : {
+		"prefix" : "MathUtil.getCircleCircleIntersection",
+		"body": [
+			"MathUtil.getCircleCircleIntersection(${1:x1}, ${2:y1}, ${3:r1}, ${4:x2}, ${5:y2}, ${6:r2})"
+		]
+	},
+	"MathUtil.hasSphereSphereIntersection" : {
+		"prefix" : "MathUtil.hasSphereSphereIntersection",
+		"body": [
+			"MathUtil.hasSphereSphereIntersection(${1:x1}, ${2:y1}, ${3:z1}, ${4:r1}, ${5:x2}, ${6:y2}, ${7:z2}, ${8:r2})"
+		]
+	},
+	"MathUtil.getHasCircleLineIntersection" : {
+		"prefix" : "MathUtil.getHasCircleLineIntersection",
+		"body": [
+			"MathUtil.getHasCircleLineIntersection(${1:circleX}, ${2:circleZ}, ${3:radius}, ${4:lineStartX}, ${5:lineStartZ}, ${6:lineEndX}, ${7:lineEndZ})"
+		]
+	},
+	"MathUtil.getCircleLineIntersection" : {
+		"prefix" : "MathUtil.getCircleLineIntersection",
+		"body": [
+			"MathUtil.getCircleLineIntersection(${1:circleX}, ${2:circleZ}, ${3:radius}, ${4:lineStartX}, ${5:lineStartZ}, ${6:lineEndX}, ${7:lineEndZ})"
+		]
+	},
+	"MathUtil.getClosestPointOnLineSegment" : {
+		"prefix" : "MathUtil.getClosestPointOnLineSegment",
+		"body": [
+			"MathUtil.getClosestPointOnLineSegment($0startX, startY, startZ, endX, endY, endZ, targetX, targetY, targetZ)"
+		]
+	},
+	"MathUtil.getHaveLineSegementsIntersection2D" : {
+		"prefix" : "MathUtil.getHaveLineSegementsIntersection2D",
+		"body": [
+			"MathUtil.getHaveLineSegementsIntersection2D($0startX1, start1Z, endX1, endZ1, startX2, start2Z, endX2, endZ2)"
+		]
+	},
+	"MathUtil.isPointInParallelogram" : {
+		"prefix" : "MathUtil.isPointInParallelogram",
+		"body": [
+			"MathUtil.isPointInParallelogram($0x, z, startX, startZ, widthX, widthZ, heightX, heightZ)"
+		]
+	},
+	"MathUtil.getPointPointDistance" : {
+		"prefix" : "MathUtil.getPointPointDistance",
+		"body": [
+			"MathUtil.getPointPointDistance(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})"
+		]
+	},
+	"MathUtil.getPointPointDistanceSquared" : {
+		"prefix" : "MathUtil.getPointPointDistanceSquared",
+		"body": [
+			"MathUtil.getPointPointDistanceSquared(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2})"
+		]
+	},
+	"MathUtil.areaToHa" : {
+		"prefix" : "MathUtil.areaToHa",
+		"body": [
+			"MathUtil.areaToHa(${1:area}, ${2:pixelToSqm})"
+		]
+	},
+	"MathUtil.inchToM" : {
+		"prefix" : "MathUtil.inchToM",
+		"body": [
+			"MathUtil.inchToM(${1:inchValue})"
+		]
+	},
+	"MathUtil.mToInch" : {
+		"prefix" : "MathUtil.mToInch",
+		"body": [
+			"MathUtil.mToInch(${1:mValue})"
+		]
+	},
+	"MathUtil.msToMinutes" : {
+		"prefix" : "MathUtil.msToMinutes",
+		"body": [
+			"MathUtil.msToMinutes(${1:ms})"
+		]
+	},
+	"MathUtil.msToHours" : {
+		"prefix" : "MathUtil.msToHours",
+		"body": [
+			"MathUtil.msToHours(${1:ms})"
+		]
+	},
+	"MathUtil.msToDays" : {
+		"prefix" : "MathUtil.msToDays",
+		"body": [
+			"MathUtil.msToDays(${1:ms})"
+		]
+	},
+	"MathUtil.minutesToMs" : {
+		"prefix" : "MathUtil.minutesToMs",
+		"body": [
+			"MathUtil.minutesToMs(${1:minutes})"
+		]
+	},
+	"MathUtil.hoursToMs" : {
+		"prefix" : "MathUtil.hoursToMs",
+		"body": [
+			"MathUtil.hoursToMs(${1:hours})"
+		]
+	},
+	"MathUtil.daysToMs" : {
+		"prefix" : "MathUtil.daysToMs",
+		"body": [
+			"MathUtil.daysToMs(${1:days})"
+		]
+	},
+	"MathUtil.mpsToKmh" : {
+		"prefix" : "MathUtil.mpsToKmh",
+		"body": [
+			"MathUtil.mpsToKmh(${1:mps})"
+		]
+	},
+	"MathUtil.kmhToMps" : {
+		"prefix" : "MathUtil.kmhToMps",
+		"body": [
+			"MathUtil.kmhToMps(${1:kmh})"
+		]
+	},
+	"MathUtil.rpmToMps" : {
+		"prefix" : "MathUtil.rpmToMps",
+		"body": [
+			"MathUtil.rpmToMps(${1:rpm}, ${2:radius})"
+		]
+	},
+	"MathUtil.getXZWidthAndHeight" : {
+		"prefix" : "MathUtil.getXZWidthAndHeight",
+		"body": [
+			"MathUtil.getXZWidthAndHeight(${1:startWorldX}, ${2:startWorldZ}, ${3:widthWorldX}, ${4:widthWorldZ}, ${5:heightWorldX}, ${6:heightWorldZ})"
+		]
+	},
+	"MathUtil.getNumOfSetBits" : {
+		"prefix" : "MathUtil.getNumOfSetBits",
+		"body": [
+			"MathUtil.getNumOfSetBits(${1:bitmask})"
+		]
+	},
+	"MathUtil.bitsToMask" : {
+		"prefix" : "MathUtil.bitsToMask",
+		"body": [
+			"MathUtil.bitsToMask($0)"
+		]
+	},
+	"MathUtil.getBinary" : {
+		"prefix" : "MathUtil.getBinary",
+		"body": [
+			"MathUtil.getBinary(${1:number})"
+		]
+	},
+	"MathUtil.numberToSetBits" : {
+		"prefix" : "MathUtil.numberToSetBits",
+		"body": [
+			"MathUtil.numberToSetBits(${1:number})"
+		]
+	},
+	"MathUtil.numberToSetBitsStr" : {
+		"prefix" : "MathUtil.numberToSetBitsStr",
+		"body": [
+			"MathUtil.numberToSetBitsStr(${1:number})"
+		]
+	},
+	"MathUtil.getNumRequiredBits" : {
+		"prefix" : "MathUtil.getNumRequiredBits",
+		"body": [
+			"MathUtil.getNumRequiredBits(${1:number})"
+		]
+	},
+	"MathUtil.getBrightnessFromColor" : {
+		"prefix" : "MathUtil.getBrightnessFromColor",
+		"body": [
+			"MathUtil.getBrightnessFromColor(${1:r}, ${2:g}, ${3:b})"
+		]
+	},
+	"MathUtil.getHorizontalRotationFromDeviceGravity" : {
+		"prefix" : "MathUtil.getHorizontalRotationFromDeviceGravity",
+		"body": [
+			"MathUtil.getHorizontalRotationFromDeviceGravity(${1:x}, ${2:y}, ${3:z})"
+		]
+	},
+	"MathUtil.getSteeringAngleFromDeviceGravity" : {
+		"prefix" : "MathUtil.getSteeringAngleFromDeviceGravity",
+		"body": [
+			"MathUtil.getSteeringAngleFromDeviceGravity(${1:x}, ${2:y}, ${3:z})"
+		]
+	},
+	"MathUtil.catmullRom" : {
+		"prefix" : "MathUtil.catmullRom",
+		"body": [
+			"MathUtil.catmullRom(${1:p0}, ${2:p1}, ${3:p2}, ${4:p3}, ${5:t})"
+		]
+	},
+	"MathUtil.equalEpsilon" : {
+		"prefix" : "MathUtil.equalEpsilon",
+		"body": [
+			"MathUtil.equalEpsilon(${1:a}, ${2:b}, ${3:epsilon})"
+		]
+	},
+	"MathUtil.smoothstep" : {
+		"prefix" : "MathUtil.smoothstep",
+		"body": [
+			"MathUtil.smoothstep(${1:min}, ${2:max}, ${3:x})"
+		]
+	},
+	"MathUtil.snapValue" : {
+		"prefix" : "MathUtil.snapValue",
+		"body": [
+			"MathUtil.snapValue(${1:value}, ${2:step})"
+		]
+	},
+	"MathUtil.vector2Rotate" : {
+		"prefix" : "MathUtil.vector2Rotate",
+		"body": [
+			"MathUtil.vector2Rotate(${1:x}, ${2:y}, ${3:angle})"
+		]
+	}
+}
